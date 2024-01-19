@@ -1,0 +1,449 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Biker-zone </title>
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- google font  -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+    <!-- tailwind-custom classes -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        clifford: '#da373d',
+                        'bike-primary': ' #E76F51',
+                        'bike-primary-bg': 'rgba( 231, 111, 81, 0.10)'
+                    }
+                }
+            }
+        }
+    </script>
+
+
+    <!-- custom style  -->
+    <style>
+        font-poppins {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+
+<body class="font-poppins">
+    <header class="">
+        <nav>
+            <div class="navbar bg-base-100">
+                <div class="flex-1">
+                    <div class="dropdown">
+                        <div tabindex="0" role="button" class="btn btn-ghost lg:hidden">
+                            <svg xmlns="http://www.w3.org/2000/svg" class="h-5 w-5" fill="none" viewBox="0 0 24 24"
+                                stroke="currentColor">
+                                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                                    d="M4 6h16M4 12h8m-8 6h16" />
+                            </svg>
+                        </div>
+                        <ul tabindex="0"
+                            class="menu menu-sm dropdown-content mt-3 z-[1] p-2 shadow text-base bg-base-100 rounded-box w-52">
+                            <li><a>Home</a></li>
+                            <li><a>Shop</a></li>
+                            <li><a>News</a></li>
+                            <li><a>Contact</a></li>
+
+
+                        </ul>
+                    </div>
+                    <a class="btn btn-ghost text-2xl lg:text-4xl">Bike Shop</a>
+                </div>
+                <div class="navbar-center hidden lg:flex">
+                    <ul class="menu text-base menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a>Shop</a></li>
+                        <li><a>News</a></li>
+                        <li><a>Contact</a></li>
+                    </ul>
+                </div>
+                <div class="">
+                    <a class="btn bg-bike-primary text-white">LOG IN</a>
+                </div>
+            </div>
+        </nav>
+        <!-- silder---carousel -->
+
+        <div class="carousel  lg:w-ful lg:h-[550px]  bg-bike-primary-bg">
+            <!-- slide1 -->
+            <div id="slide1" class="carousel-item relative w-full">
+                <div class="flex flex-col lg:flex-row gap-20 p-4 lg:p-24  ">
+                    <div class="space-y-7 flex-1">
+                        <h2 class="text-2xl lg:text-6xl font-bold">
+                            Ride-on R15 V4 <br>
+                            with Smile
+                        </h2>
+                        <p class="w-ful lg:w-ful">
+                            Amet minim mollit non deserunt ullamco
+                            est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+                        </p>
+                        <button class=" btn bg-bike-primary text-white">
+                            Purchase
+                        </button>
+                    </div>
+                    <div class="flex-1">
+                        <img src="biker-zone-resources/images/slider/bike1.png" class=" w-ful lg:w-[400px]" />
+                    </div>
+                </div>
+
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide4" class="btn btn-circle">❮</a>
+                    <a href="#slide2" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <!-- slide2 -->
+            <div id="slide2" class="carousel-item relative w-full">
+                <div class="flex flex-col lg:flex-row gap-20 p-4 lg:p-24  ">
+                    <div class="space-y-7 flex-1">
+                        <h2 class="text-3xl lg:text-6xl font-bold">
+                            Ride-on R15 V4 <br>
+                            with Smile
+                        </h2>
+                        <p>
+                            Amet minim mollit non deserunt ullamco
+                            est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+                        </p>
+                        <button class=" btn bg-bike-primary text-white">
+                            Purchase
+                        </button>
+                    </div>
+                    <div class="flex-1">
+                        <img src="biker-zone-resources/images/slider/bike2.png" class=" w-[400px]" />
+                    </div>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide1" class="btn btn-circle">❮</a>
+                    <a href="#slide3" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <!-- slide3 -->
+            <div id="slide3" class="carousel-item relative w-full">
+                <div class="flex flex-col lg:flex-row gap-20 p-4 lg:p-24  ">
+                    <div class="space-y-7 flex-1">
+                        <h2 class="text-3xl lg:text-6xl font-bold">
+                            Ride-on R15 V4 <br>
+                            with Smile
+                        </h2>
+                        <p>
+                            Amet minim mollit non deserunt ullamco
+                            est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+                        </p>
+                        <button class=" btn bg-bike-primary text-white">
+                            Purchase
+                        </button>
+                    </div>
+                    <div class="flex-1">
+                        <img src="./biker-zone-resources/images/slider/bike3.png" class="w-[400px]" />
+                    </div>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide2" class="btn btn-circle">❮</a>
+                    <a href="#slide4" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+            <!-- slide4 -->
+            <div id="slide4" class="carousel-item relative w-full">
+                <div class="flex flex-col lg:flex-row gap-20 p-4 lg:p-24  ">
+                    <div class="space-y-7 flex-1">
+                        <h2 class="text-3xl lg:text-6xl font-bold">
+                            Ride-on R15 V4 <br>
+                            with Smile
+                        </h2>
+                        <p>
+                            Amet minim mollit non deserunt ullamco
+                            est sit aliqua dolor do amet sint. Velit officia consequat duis enim velit mollit.
+                        </p>
+                        <button class=" btn bg-bike-primary text-white">
+                            Purchase
+                        </button>
+                    </div>
+                    <div class="flex-1">
+                        <img src="./biker-zone-resources/images/slider/bike1.png" class="w-[400px]" />
+                    </div>
+                </div>
+                <div class="absolute flex justify-between transform -translate-y-1/2 left-5 right-5 top-1/2">
+                    <a href="#slide3" class="btn btn-circle">❮</a>
+                    <a href="#slide1" class="btn btn-circle">❯</a>
+                </div>
+            </div>
+        </div>
+    </header>
+    <main class="md:container md:max-auto">
+        <!-- featured bike  -->
+        <section>
+
+        </section>
+        <!-- latest bike  -->
+        <section class="my-24">
+            <h3 class="text-5xl mb-14 font-semibold text-center">latest News</h3>
+            <div class="grid gap-5 grid-cols-l md:grid-cols-2 lg:grid-cols-3">
+                <!-- frist card  -->
+                <div class="card  bg-base-100 shadow-xl">
+                    <figure><img src="./biker-zone-resources/images/others/latest1.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title text-3xl">Ducati XDIAVEL S-73</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed
+                            id nisi lectus at.</p>
+                        <div class="card-actions ">
+                            <button class="btn bg-bike-primary uppercase text-white">Purchase</button>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- second card  -->
+                <div class="card  bg-base-100 shadow-xl">
+                    <figure><img src="./biker-zone-resources/images/others/latest2.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title text-3xl">Ducati XDIAVEL S-73</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed
+                            id nisi lectus at.</p>
+                        <div class="card-actions ">
+                            <button class="btn bg-bike-primary uppercase text-white">Purchase</button>
+                        </div>
+                    </div>
+
+                </div>
+                <!-- third card  -->
+                <div class="card  bg-base-100 shadow-xl">
+                    <figure><img src="./biker-zone-resources/images/others/latest3.png" alt="Shoes" /></figure>
+                    <div class="card-body">
+                        <h2 class="card-title text-3xl">Ducati XDIAVEL S-73</h2>
+                        <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Lacus, fermentum amet faucibus sed
+                            id nisi lectus at.</p>
+                        <div class="card-actions ">
+                            <button class="btn bg-bike-primary uppercase text-white">Purchase</button>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- Happy Clients says -->
+        <section class="ny-24">
+            <h3 class="text-5xl mb-14 font-semibold text-center">
+                Happy <span class="text-[#E76F51]">Clients Says</span> </h3>
+            <!-- first client review -->
+            <div class="grid gap grid-cols-1 md:grid-cols-2 ml-14 lg:grid-cols-3">
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img class="w-36" src="./biker-zone-resources/images/others/user-1.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                        <p>Slate helps you see how
+                            many more days you need
+                            to work to reach your financial
+                            goal for the month and year.</p>
+                        <div class="flex justify-center">
+                            <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="#ffc107"
+                                viewBox="0 0 576 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                <path
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                            </svg>
+                            <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="#ffc107"
+                                viewBox="0 0 576 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                <path
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                            </svg>
+                            <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="#ffc107"
+                                viewBox="0 0 576 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                <path
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                            </svg>
+                            <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="#ffc107"
+                                viewBox="0 0 576 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                <path
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                            </svg>
+                            <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="#ffc107"
+                                viewBox="0 0 576 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                <path
+                                    d="M288 376.4l.1-.1 26.4 14.1 85.2 45.5-16.5-97.6-4.8-28.7 20.7-20.5 70.1-69.3-96.1-14.2-29.3-4.3-12.9-26.6L288.1 86.9l-.1 .3V376.4zm175.1 98.3c2 12-3 24.2-12.9 31.3s-23 8-33.8 2.3L288.1 439.8 159.8 508.3C149 514 135.9 513.1 126 506s-14.9-19.3-12.9-31.3L137.8 329 33.6 225.9c-8.6-8.5-11.7-21.2-7.9-32.7s13.7-19.9 25.7-21.7L195 150.3 259.4 18c5.4-11 16.5-18 28.8-18s23.4 7 28.8 18l64.3 132.3 143.6 21.2c12 1.8 22 10.2 25.7 21.7s.7 24.2-7.9 32.7L438.5 329l24.6 145.7z" />
+                            </svg>
+                        </div>
+
+                        <h2 class="card-title text-3xl justify-center text-[#23A6F0]">Regina Miles</h2>
+                        <div class="card-actions justify-center">
+                            <h1 class="text-3xl font-semibold">Banker</h1>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card w-96 bg-base-100 shadow-xl">
+                    <figure><img class="w-36" src="./biker-zone-resources/images/others/user-2.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                        <p>Slate helps you see how
+                            many more days you need
+                            to work to reach your financial
+                            goal for the month and year.</p>
+                        <div class="flex justify-center">
+                            <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="#ffc107"
+                                viewBox="0 0 576 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                <path
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                            </svg>
+                            <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="#ffc107"
+                                viewBox="0 0 576 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                <path
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                            </svg>
+                            <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="#ffc107"
+                                viewBox="0 0 576 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                <path
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                            </svg>
+                            <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="#ffc107"
+                                viewBox="0 0 576 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                <path
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                            </svg>
+                            <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="#ffc107"
+                                viewBox="0 0 576 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                <path
+                                    d="M288 376.4l.1-.1 26.4 14.1 85.2 45.5-16.5-97.6-4.8-28.7 20.7-20.5 70.1-69.3-96.1-14.2-29.3-4.3-12.9-26.6L288.1 86.9l-.1 .3V376.4zm175.1 98.3c2 12-3 24.2-12.9 31.3s-23 8-33.8 2.3L288.1 439.8 159.8 508.3C149 514 135.9 513.1 126 506s-14.9-19.3-12.9-31.3L137.8 329 33.6 225.9c-8.6-8.5-11.7-21.2-7.9-32.7s13.7-19.9 25.7-21.7L195 150.3 259.4 18c5.4-11 16.5-18 28.8-18s23.4 7 28.8 18l64.3 132.3 143.6 21.2c12 1.8 22 10.2 25.7 21.7s.7 24.2-7.9 32.7L438.5 329l24.6 145.7z" />
+                            </svg>
+                        </div>
+
+                        <h2 class="card-title text-3xl justify-center text-[#23A6F0]">Regina Miles</h2>
+                        <div class="card-actions justify-center">
+                            <h1 class="text-3xl font-semibold">Banker</h1>
+                        </div>
+                    </div>
+
+                </div>
+                <div class="card w-96 bg-base-100 p-9 shadow-xl">
+                    <figure><img class="w-36" src="./biker-zone-resources/images/others/user-3.png" alt="Shoes" />
+                    </figure>
+                    <div class="card-body">
+                        <p>Slate helps you see how
+                            many more days you need
+                            to work to reach your financial
+                            goal for the month and year.</p>
+                        <div class="flex justify-center">
+                            <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="#ffc107"
+                                viewBox="0 0 576 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                <path
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                            </svg>
+                            <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="#ffc107"
+                                viewBox="0 0 576 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                <path
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                            </svg>
+                            <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="#ffc107"
+                                viewBox="0 0 576 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                <path
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                            </svg>
+                            <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="#ffc107"
+                                viewBox="0 0 576 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                <path
+                                    d="M316.9 18C311.6 7 300.4 0 288.1 0s-23.4 7-28.8 18L195 150.3 51.4 171.5c-12 1.8-22 10.2-25.7 21.7s-.7 24.2 7.9 32.7L137.8 329 113.2 474.7c-2 12 3 24.2 12.9 31.3s23 8 33.8 2.3l128.3-68.5 128.3 68.5c10.8 5.7 23.9 4.9 33.8-2.3s14.9-19.3 12.9-31.3L438.5 329 542.7 225.9c8.6-8.5 11.7-21.2 7.9-32.7s-13.7-19.9-25.7-21.7L381.2 150.3 316.9 18z" />
+                            </svg>
+                            <svg class="w-6" xmlns="http://www.w3.org/2000/svg" fill="#ffc107"
+                                viewBox="0 0 576 512"><!--! Font Awesome Pro 6.2.1 by @fontawesome - https://fontawesome.com License - https://fontawesome.com/license (Commercial License) Copyright 2022 Fonticons, Inc. -->
+                                <path
+                                    d="M288 376.4l.1-.1 26.4 14.1 85.2 45.5-16.5-97.6-4.8-28.7 20.7-20.5 70.1-69.3-96.1-14.2-29.3-4.3-12.9-26.6L288.1 86.9l-.1 .3V376.4zm175.1 98.3c2 12-3 24.2-12.9 31.3s-23 8-33.8 2.3L288.1 439.8 159.8 508.3C149 514 135.9 513.1 126 506s-14.9-19.3-12.9-31.3L137.8 329 33.6 225.9c-8.6-8.5-11.7-21.2-7.9-32.7s13.7-19.9 25.7-21.7L195 150.3 259.4 18c5.4-11 16.5-18 28.8-18s23.4 7 28.8 18l64.3 132.3 143.6 21.2c12 1.8 22 10.2 25.7 21.7s.7 24.2-7.9 32.7L438.5 329l24.6 145.7z" />
+                            </svg>
+                        </div>
+
+
+                        <h2 class="card-title text-3xl justify-center text-[#23A6F0]">Regina Miles</h2>
+                        <div class="card-actions justify-center">
+                            <h1 class="text-3xl font-semibold">Banker</h1>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+        <!-- FAQ -->
+        <section class="my-24">
+            <h3 class="text-5xl mb-14 font-semibold text-center">
+                Frequently Asked
+                <span class="text-[#E76F51]">Questions</span>
+            </h3>
+            <div class="hero bg-base-200">
+                <div class="hero-content flex-col lg:flex-row lg:gap-24 ">
+                    <img src="./biker-zone-resources/images/others/faq.png" class="w-3/4 lg:max-w-sm rounded-lg shadow-2xl" />
+                    <div>
+                        <div class="collapse collapse-arrow bg-base-200">
+                            <input type="radio" name="my-accordion-2" checked="checked" />
+                            <div class="collapse-title text-xl font-medium">
+                                What are the most important things I should
+                                know about riding a bike?
+
+                            </div>
+                            <div class="collapse-content">
+                                <p>Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and
+                                    laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This
+                                    will help you be a more focused and legally compliant bike rider. </p>
+                            </div>
+                        </div>
+                        <div class="collapse collapse-arrow bg-base-200">
+                            <input type="radio" name="my-accordion-2" />
+                            <div class="collapse-title text-xl font-medium">
+                                How can I tell if my helmet is old and I need a
+                                new one?
+                            </div>
+                            <div class="collapse-content">
+                                <p>Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and
+                                    laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This
+                                    will help you be a more focused and legally compliant bike rider. </p>
+                            </div>
+                        </div>
+                        <div class="collapse collapse-arrow bg-base-200">
+                            <input type="radio" name="my-accordion-2" />
+                            <div class="collapse-title text-xl font-medium">
+                                My bike has been in storage is it safe to ride?
+                            </div>
+                            <div class="collapse-content">
+                                <p>Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and
+                                    laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This
+                                    will help you be a more focused and legally compliant bike rider. </p>
+                            </div>
+                        </div>
+                        <div class="collapse collapse-arrow bg-base-200">
+                            <input type="radio" name="my-accordion-2" />
+                            <div class="collapse-title text-xl font-medium">
+                                What rules should I follow when riding my bike?
+                            </div>
+                            <div class="collapse-content">
+                                <p>Safety First! Always obey the rules of the road. Obey all traffic signals, signs, and
+                                    laws. Get in the mindset of “driving” your bike—not just “riding” your bike. This
+                                    will help you be a more focused and legally compliant bike rider. </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer class="footer p-10 bg-neutral text-neutral-content">
+        <aside>
+          
+          <p>ACME Industries Ltd.<br/>Providing reliable tech since 1992</p>
+        </aside> 
+        <nav>
+          <header class="footer-title">Social Media</header> 
+          <div class="grid grid-cols-1 gap-4">
+            <a><img class="w-40" src="./biker-zone-resources/images/others/android.png" alt="" srcset=""></a>
+            <a><img class="w-40" src="./biker-zone-resources/images/others/ios.png" alt="" srcset=""></a>
+       
+          </div>
+        </nav>
+      </footer>
+</body>
+
+</html>
